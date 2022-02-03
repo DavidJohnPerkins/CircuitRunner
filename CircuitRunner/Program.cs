@@ -12,6 +12,7 @@ namespace CircuitRunner
         static void Main(string[] args)
         {
             //TODO: Next up - logging.  Create log class with verbose switch - comment amended
+            // Added another comment
 
             //var device = CreateDeviceFromXML("Configuration.xml");
             var device = Deserialise("../../../TwoNumberAdder_config.xml");
