@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CircuitDesign_2
+namespace CircuitRunner
 {
     public class CircuitTemplate
     {

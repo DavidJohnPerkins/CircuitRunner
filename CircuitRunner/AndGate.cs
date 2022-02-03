@@ -1,5 +1,5 @@
 ﻿using System;
-namespace CircuitDesign_2
+namespace CircuitRunner
 {
     public class AndGate : Gate
     {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace CircuitDesign_2
+namespace CircuitRunner
 {
     class Program
     {

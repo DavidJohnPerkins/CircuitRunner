@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace CircuitDesign_2
+namespace CircuitRunner
 {
     public class CollectionBase<T> : List<T> where T : Item
     {
