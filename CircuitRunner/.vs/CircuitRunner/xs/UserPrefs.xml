@@ -1,14 +1,17 @@
-﻿<Properties StartupConfiguration="{058E198E-CCD2-4343-963E-1ABCCAB5345C}|Default">
-  <MonoDevelop.Ide.ItemProperties.CircuitRunner FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CircuitRunner/Program.cs">
+﻿<Properties StartupConfiguration="{F1D9B960-9448-42C8-9F2E-F87094B4C852}|Default">
+  <MonoDevelop.Ide.ItemProperties.CircuitRunner PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="CircuitRunner/Program.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="15" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CircuitRunner" expanded="True">
             <Node name="CircuitRunner" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+              </Node>
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>

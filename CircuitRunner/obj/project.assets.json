@@ -8,21 +8,17 @@
     "net5.0": []
   },
   "packageFolders": {
-    "/Users/davidperkins/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "/Users/davidperkins/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/davidperkins/Projects/CSharp/CircuitRunner/CircuitRunner/CircuitRunner.csproj",
+      "projectUniqueName": "/Users/davidperkins/Projects/CircuitRunner/CircuitRunner/CircuitRunner.csproj",
       "projectName": "CircuitRunner",
-      "projectPath": "/Users/davidperkins/Projects/CSharp/CircuitRunner/CircuitRunner/CircuitRunner.csproj",
+      "projectPath": "/Users/davidperkins/Projects/CircuitRunner/CircuitRunner/CircuitRunner.csproj",
       "packagesPath": "/Users/davidperkins/.nuget/packages/",
-      "outputPath": "/Users/davidperkins/Projects/CSharp/CircuitRunner/CircuitRunner/obj/",
+      "outputPath": "/Users/davidperkins/Projects/CircuitRunner/CircuitRunner/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "/Users/davidperkins/.config/NuGet/NuGet.Config"
       ],
@@ -62,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.404/RuntimeIdentifierGraph.json"
       }
     }
   }

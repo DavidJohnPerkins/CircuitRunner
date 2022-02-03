@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{058E198E-CCD2-4343-963E-1ABCCAB5345C}|Default">
   <MonoDevelop.Ide.ItemProperties.CircuitRunner PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="CircuitRunner/Program.cs">
     <Files>
       <File FileName="CircuitRunner/Program.cs" Line="13" Column="10" />
     </Files>
@@ -8,12 +8,7 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CircuitRunner" expanded="True">
-            <Node name="CircuitRunner" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
-              </Node>
-              <Node name="CircuitTemplate.cs" selected="True" />
-            </Node>
+            <Node name="CircuitRunner" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>

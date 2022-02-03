@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zzt9UpwoeSOc2F85k2dKbvJHlF0vjRb0WCWLimssic0/nDVQk81Xq6DeDfrrh8aK0+h46KLm/wLmtCncssZMrQ==",
+  "dgSpecHash": "teENtYCfwAD72gVRQx8093mALrnzw3Px0ufC4PMwwoZ9ROXFDdcJMn9NmGk4Aw+yUI8m/4ysdA1jzFzYaSvtZg==",
   "success": true,
-  "projectFilePath": "/Users/davidperkins/Projects/CSharp/CircuitRunner/CircuitRunner/CircuitRunner.csproj",
+  "projectFilePath": "/Users/davidperkins/Projects/CircuitRunner/CircuitRunner/CircuitRunner.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
