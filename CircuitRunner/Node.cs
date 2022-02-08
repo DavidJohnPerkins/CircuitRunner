@@ -49,13 +49,6 @@ namespace CircuitRunner
             }
         }
 
-
-        public void LogMessage(string message, bool verbose)
-        {
-            if (verbose)
-                Console.WriteLine(message);
-        }
-
         public override string ToString()
         {
             return ParentId + Id;

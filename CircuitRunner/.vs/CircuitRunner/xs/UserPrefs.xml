@@ -1,11 +1,24 @@
 ﻿<Properties StartupConfiguration="{F1D9B960-9448-42C8-9F2E-F87094B4C852}|Default">
   <MonoDevelop.Ide.ItemProperties.CircuitRunner PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Circuit.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TwoNumberAdder_config.xml">
     <Files>
-      <File FileName="Program.cs" Line="15" Column="1" />
-      <File FileName="FullAdder_config.xml" Line="60" Column="30" />
-      <File FileName="AndGate.cs" Line="1" Column="1" />
-      <File FileName="Circuit.cs" Line="1" Column="1" />
+      <File FileName="Buffer.cs" Line="14" Column="1" />
+      <File FileName="Outputs.cs" />
+      <File FileName="Output.cs" Line="11" Column="30" />
+      <File FileName="TerminalNode.cs" Line="30" Column="1" />
+      <File FileName="Node.cs" Line="52" Column="1" />
+      <File FileName="Item.cs" Line="35" Column="6" />
+      <File FileName="Gate.cs" Line="23" Column="1" />
+      <File FileName="CollectionBase.cs" Line="32" Column="1" />
+      <File FileName="Terminal.cs" />
+      <File FileName="Program.cs" Line="130" Column="1" />
+      <File FileName="Device.cs" Line="43" Column="21" />
+      <File FileName="Input.cs" />
+      <File FileName="AndGate.cs" />
+      <File FileName="Circuit.cs" Line="37" Column="41" />
+      <File FileName="SingleANDGate.xml" Line="27" Column="47" />
+      <File FileName="Construction.cs" Line="14" Column="1" />
+      <File FileName="TwoNumberAdder_config.xml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +28,7 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="FrameworkReferences" expanded="True" />
               </Node>
-              <Node name="Circuit.cs" selected="True" />
+              <Node name="TwoNumberAdder_config.xml" selected="True" />
             </Node>
           </Node>
         </State>

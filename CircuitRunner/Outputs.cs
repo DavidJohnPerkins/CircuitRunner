@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CircuitRunner
 {
-    public class Outputs : Item
+    public class Outputs_x : Item
     {
         public CollectionBase<Output> List
         {
@@ -11,7 +11,7 @@ namespace CircuitRunner
             private set;
         }
 
-        public Outputs()
+        public Outputs_x()
         {
             List = new CollectionBase<Output>();
         }

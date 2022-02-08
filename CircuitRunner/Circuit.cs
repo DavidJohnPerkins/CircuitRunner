@@ -5,7 +5,7 @@ namespace CircuitRunner
 {
     public class Circuit : Item
     {
-        public CollectionBase<Buffer> Buffers
+        public CollectionBase<Input> Inputs
         {
             get;
             private set;
@@ -25,7 +25,7 @@ namespace CircuitRunner
 
         public Circuit()
         {
-            Buffers = new CollectionBase<Buffer>();
+            Inputs = new CollectionBase<Input>();
             Gates = new CollectionBase<Gate>();
             Outputs = new CollectionBase<Output>();
         }
@@ -36,6 +36,7 @@ namespace CircuitRunner
             {
                 if (recalculate == true)
                 {
+                    LogMessage(String.Format("Recalculating gate {0}...", g.Id), true);
                     Gates.Report(g, verbose);
                     g.SetState();
                 }
@@ -43,22 +44,16 @@ namespace CircuitRunner
             }
         }
 
+        /*
         public void ConfigureBuffer(Buffer buffer, Node inputSource)
         {
-            if (!Buffers.ItemExists(inputSource.Id))
+            if (!Inputs.ItemExists(inputSource.Id))
             {
                 buffer.AttachTerminal(buffer, inputSource, "A");
                 Buffers.Add(buffer);
             }
         }
-
-        public void Add(Gate gate)
-        {
-            if (!Gates.ItemExists(gate.Id))
-            {
-                Gates.Add(gate);
-            }
-        }
+        */
 
         /*public void Add(Gate gate, Node terminalAInput)
         {

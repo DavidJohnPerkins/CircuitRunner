@@ -4,7 +4,7 @@ namespace CircuitRunner
     public abstract class Item
     {
 
-        public string Id
+        public virtual string Id
         {
             get;
             set;
@@ -25,6 +25,12 @@ namespace CircuitRunner
         {
             get;
             set;
+        }
+
+        protected void LogMessage(string message, bool verbose)
+        {
+            if (verbose)
+                Console.WriteLine(message);
         }
     }
 }

@@ -57,7 +57,7 @@ namespace CircuitRunner
                 term.State = newState;
 
                 if (verbose == true)
-                    LogMessage(String.Format("State change: Circuit {0} Gate {1} terminal {2} has new state {3}", ParentId, Id, term.Id, term.State), false);
+                    LogMessage(String.Format("State change: Circuit {0} Gate {1} terminal {2} has new state {3}", ParentId, Id, term.Id, term.State), verbose);
             }
         }
 
