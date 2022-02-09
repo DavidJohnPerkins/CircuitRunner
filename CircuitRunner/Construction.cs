@@ -58,7 +58,15 @@ public static class Construction
 
                 foreach (Terminal tm in gt.Terminals.ToList())
                 {
-                    gt.AttachTerminal(gt, GetNodeSource(device, tm), tm.Id);
+                    switch (tm.SourceType) {
+                        case "DeviceInput":
+                        case "CircuitOuput":
+                            gt.AttachTerminal(gt, GetNodeSource(device, tm), tm.Id);
+                            break;
+                        case "Gate":
+                            gt.AttachTerminal(gt, GetNodeSource(ct, tm), tm.Id);
+                            break;
+                    }
                 }
             }
 

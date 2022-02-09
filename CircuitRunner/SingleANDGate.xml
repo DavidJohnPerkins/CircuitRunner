@@ -34,6 +34,18 @@
                         </Terminal>
                     </Terminals>
                 </Gate>
+                <Gate>
+                    <Id>N1</Id>
+                    <Type>NOT</Type>
+                    <Terminals>
+                        <Terminal>
+                            <Id>A</Id>
+                            <SourceParent>C1</SourceParent>
+                            <SourceObject>AND_1</SourceObject>
+                            <SourceType>Gate</SourceType>
+                        </Terminal>
+                    </Terminals>
+                </Gate>
             </Gates>        
             <Outputs>
                 <Output>
@@ -42,7 +54,7 @@
                         <Terminal>
                             <Id>A</Id>
                             <SourceParent>C1</SourceParent>
-                            <SourceObject>AND_1</SourceObject>
+                            <SourceObject>N1</SourceObject>
                             <SourceType>Gate</SourceType>
                         </Terminal>
                     </Terminals>

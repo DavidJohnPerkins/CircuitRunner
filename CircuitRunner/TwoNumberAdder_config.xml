@@ -23,30 +23,6 @@
     <Circuits>
         <Circuit>
             <Id>C1</Id>
-            <Buffers>
-                <Buffer>
-                    <Id>IBA</Id>
-                    <Terminals>
-                        <Terminal> 
-                            <Id>A</Id>
-                            <SourceParent>TNA</SourceParent>
-                            <SourceObject>InputA2</SourceObject>
-                            <SourceType>DeviceInput</SourceType>
-                        </Terminal>
-                    </Terminals>
-                </Buffer>
-                <Buffer>
-                    <Id>IBB</Id>
-                    <Terminals>
-                        <Terminal> 
-                            <Id>A</Id>
-                            <SourceParent>TNA</SourceParent>
-                            <SourceObject>InputB2</SourceObject>
-                            <SourceType>DeviceInput</SourceType>
-                        </Terminal>
-                    </Terminals>
-                </Buffer>
-            </Buffers>
             <Gates>
                 <Gate>
                     <Id>O1</Id>
@@ -54,15 +30,15 @@
                     <Terminals>
                         <Terminal> 
                             <Id>A</Id>
-                            <SourceParent>C1</SourceParent>
-                            <SourceObject>IBA</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>TNA</SourceParent>
+                            <SourceObject>InputA2</SourceObject>
+                            <SourceType>DeviceInput</SourceType>
                         </Terminal>
                         <Terminal>     
                             <Id>B</Id>
-                            <SourceParent>C1</SourceParent>
-                            <SourceObject>IBB</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>TNA</SourceParent>
+                            <SourceObject>InputB2</SourceObject>
+                            <SourceType>DeviceInput</SourceType>
                         </Terminal>
                     </Terminals>
                 </Gate>
@@ -72,15 +48,15 @@
                     <Terminals>
                         <Terminal> 
                             <Id>A</Id>
-                            <SourceParent>C1</SourceParent>
-                            <SourceObject>IBA</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>TNA</SourceParent>
+                            <SourceObject>InputB1</SourceObject>
+                            <SourceType>DeviceInput</SourceType>
                         </Terminal>
                         <Terminal>     
                             <Id>B</Id>
-                            <SourceParent>C1</SourceParent>
-                            <SourceObject>IBB</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>TNA</SourceParent>
+                            <SourceObject>InputA2</SourceObject>
+                            <SourceType>DeviceInput</SourceType>
                         </Terminal>
                     </Terminals>
                 </Gate>
@@ -142,30 +118,6 @@
         </Circuit> 
         <Circuit>
             <Id>C2</Id>
-            <Buffers>
-                <Buffer>
-                    <Id>IBA</Id>
-                    <Terminals>
-                        <Terminal> 
-                            <Id>A</Id>
-                            <SourceParent>C1</SourceParent>
-                            <SourceObject>C1A1Out</SourceObject>
-                            <SourceType>CircuitOutput</SourceType>
-                        </Terminal>
-                    </Terminals>
-                </Buffer>
-                <Buffer>
-                    <Id>IBB</Id>
-                    <Terminals>
-                        <Terminal> 
-                            <Id>A</Id>
-                            <SourceParent>TNA</SourceParent>
-                            <SourceObject>InputA1</SourceObject>
-                            <SourceType>DeviceInput</SourceType>
-                        </Terminal>
-                    </Terminals>
-                </Buffer>
-            </Buffers>
             <Gates>
                 <Gate>
                     <Id>A1</Id>
@@ -173,15 +125,15 @@
                     <Terminals>
                         <Terminal>
                             <Id>A</Id>
-                            <SourceParent>C2</SourceParent>
-                            <SourceObject>IBA</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>C1</SourceParent>
+                            <SourceObject>C1A1Out</SourceObject>
+                            <SourceType>CircuitOutput</SourceType>
                         </Terminal>
                         <Terminal>
                             <Id>B</Id>
-                            <SourceParent>C2</SourceParent>
-                            <SourceObject>IBB</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>TNA</SourceParent>
+                            <SourceObject>InputA1</SourceObject>
+                            <SourceType>DeviceInput</SourceType>
                         </Terminal>
                     </Terminals>
                 </Gate>
@@ -203,9 +155,9 @@
                     <Terminals>
                         <Terminal>
                             <Id>A</Id>
-                            <SourceParent>C2</SourceParent>
-                            <SourceObject>IBA</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>TNA</SourceParent>
+                            <SourceObject>InputA1</SourceObject>
+                            <SourceType>DeviceInput</SourceType>
                         </Terminal>
                         <Terminal>
                             <Id>B</Id>
@@ -227,9 +179,9 @@
                         </Terminal>
                         <Terminal>
                             <Id>B</Id>
-                            <SourceParent>C2</SourceParent>
-                            <SourceObject>IBB</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>C1</SourceParent>
+                            <SourceObject>A1</SourceObject>
+                            <SourceType>Gate</SourceType>
                         </Terminal>
                     </Terminals>
                 </Gate>
@@ -268,41 +220,6 @@
         </Circuit>
         <Circuit>
             <Id>C3</Id>
-            <Buffers>
-                <Buffer>
-                    <Id>IBA</Id>
-                    <Terminals>
-                        <Terminal> 
-                            <Id>A</Id>
-                            <SourceParent>C1</SourceParent>
-                            <SourceObject>C1A1Out</SourceObject>
-                            <SourceType>CircuitOutput</SourceType>
-                        </Terminal>
-                    </Terminals>
-                </Buffer>
-                <Buffer>
-                    <Id>IBB</Id>
-                    <Terminals>
-                        <Terminal> 
-                            <Id>A</Id>
-                            <SourceParent>TNA</SourceParent>
-                            <SourceObject>InputA1</SourceObject>
-                            <SourceType>DeviceInput</SourceType>
-                        </Terminal>
-                    </Terminals>
-                </Buffer>
-                <Buffer>
-                    <Id>IBC</Id>
-                    <Terminals>
-                        <Terminal> 
-                            <Id>A</Id>
-                            <SourceParent>TNA</SourceParent>
-                            <SourceObject>InputB1</SourceObject>
-                            <SourceType>DeviceInput</SourceType>
-                        </Terminal>
-                    </Terminals>
-                </Buffer>
-            </Buffers>
             <Gates>
                 <Gate>
                     <Id>A1</Id>
@@ -310,15 +227,15 @@
                     <Terminals>
                         <Terminal>
                             <Id>A</Id>
-                            <SourceParent>C3</SourceParent>
-                            <SourceObject>IBA</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>C1</SourceParent>
+                            <SourceObject>C1A1Out</SourceObject>
+                            <SourceType>CircuitOutput</SourceType>
                         </Terminal>
                         <Terminal>
                             <Id>B</Id>
-                            <SourceParent>C3</SourceParent>
-                            <SourceObject>IBB</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>TNA</SourceParent>
+                            <SourceObject>InputA1</SourceObject>
+                            <SourceType>DeviceInput</SourceType>
                         </Terminal>
                     </Terminals>
                 </Gate>
@@ -328,15 +245,15 @@
                     <Terminals>
                         <Terminal>
                             <Id>A</Id>
-                            <SourceParent>C3</SourceParent>
-                            <SourceObject>IBA</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>C1</SourceParent>
+                            <SourceObject>C1A1Out</SourceObject>
+                            <SourceType>CircuitOutput</SourceType>
                         </Terminal>
                         <Terminal>
                             <Id>B</Id>
-                            <SourceParent>C3</SourceParent>
-                            <SourceObject>IBC</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>TNA</SourceParent>
+                            <SourceObject>InputB1</SourceObject>
+                            <SourceType>DeviceInput</SourceType>
                         </Terminal>
                     </Terminals>
                 </Gate>
@@ -346,15 +263,15 @@
                     <Terminals>
                         <Terminal>
                             <Id>A</Id>
-                            <SourceParent>C3</SourceParent>
-                            <SourceObject>IBB</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>TNA</SourceParent>
+                            <SourceObject>InputA1</SourceObject>
+                            <SourceType>DeviceInput</SourceType>
                         </Terminal>
                         <Terminal>
                             <Id>B</Id>
-                            <SourceParent>C3</SourceParent>
-                            <SourceObject>IBC</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>TNA</SourceParent>
+                            <SourceObject>InputB1</SourceObject>
+                            <SourceType>DeviceInput</SourceType>
                         </Terminal>
                     </Terminals>
                 </Gate>
@@ -411,30 +328,6 @@
         </Circuit>
         <Circuit>
             <Id>C4</Id>
-            <Buffers>
-                <Buffer>
-                    <Id>IBA</Id>
-                    <Terminals>
-                        <Terminal> 
-                            <Id>A</Id>
-                            <SourceParent>TNA</SourceParent>
-                            <SourceObject>InputB1</SourceObject>
-                            <SourceType>DeviceInput</SourceType>
-                        </Terminal>
-                    </Terminals>
-                </Buffer>
-                <Buffer>
-                    <Id>IBB</Id>
-                    <Terminals>
-                        <Terminal> 
-                            <Id>A</Id>
-                            <SourceParent>C2</SourceParent>
-                            <SourceObject>C2O1Out</SourceObject>
-                            <SourceType>CircuitOutput</SourceType>
-                        </Terminal>
-                    </Terminals>
-                </Buffer>
-            </Buffers>
             <Gates>
                 <Gate>
                     <Id>A1</Id>
@@ -442,15 +335,15 @@
                     <Terminals>
                         <Terminal>
                             <Id>A</Id>
-                            <SourceParent>C4</SourceParent>
-                            <SourceObject>IBA</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>TNA</SourceParent>
+                            <SourceObject>InputB1</SourceObject>
+                            <SourceType>DeviceInput</SourceType>
                         </Terminal>
                         <Terminal>
                             <Id>B</Id>
-                            <SourceParent>C4</SourceParent>
-                            <SourceObject>IBB</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>C2</SourceParent>
+                            <SourceObject>C2O1Out</SourceObject>
+                            <SourceType>CircuitOutput</SourceType>
                         </Terminal>
                     </Terminals>
                 </Gate>
@@ -472,9 +365,9 @@
                     <Terminals>
                         <Terminal>
                             <Id>A</Id>
-                            <SourceParent>C4</SourceParent>
-                            <SourceObject>IBA</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>TNA</SourceParent>
+                            <SourceObject>InputB1</SourceObject>
+                            <SourceType>DeviceInput</SourceType>
                         </Terminal>
                         <Terminal>
                             <Id>B</Id>
@@ -496,9 +389,9 @@
                         </Terminal>
                         <Terminal>
                             <Id>B</Id>
-                            <SourceParent>C4</SourceParent>
-                            <SourceObject>IBB</SourceObject>
-                            <SourceType>Buffer</SourceType>
+                            <SourceParent>C2</SourceParent>
+                            <SourceObject>C2O1Out</SourceObject>
+                            <SourceType>CircuitOutput</SourceType>
                         </Terminal>
                     </Terminals>
                 </Gate>
